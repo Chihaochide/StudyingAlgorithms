@@ -51,7 +51,7 @@ public class Code_MergeSortImportant {
             while (L<N){
                 int M = L+mergerSize-1; // 左组最后的位置
                 if (M>=N) break;
-                int R = Math.min(M+mergerSize,N-1);
+                int R = Math.min(M+mergerSize,N-1); // 右组最后的位置
                 System.out.format("L = %d M = %d R = %d\n",L,M,R);
                 merge(arr,L,M,R);
                 System.out.println(Arrays.toString(arr)+"\n");
