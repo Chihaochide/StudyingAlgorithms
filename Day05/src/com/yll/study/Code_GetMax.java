@@ -21,7 +21,7 @@ public class Code_GetMax {
     }
 
     public static void main(String[] args) {
-        int[] arr = new int[]{3,5,1,8};
+        int[] arr = new int[]{3,5,1};
         System.out.println(process(arr, 0, arr.length - 1));
     }
 }
