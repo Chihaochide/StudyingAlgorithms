@@ -40,7 +40,7 @@ public class Review_SortArr {
             int L = 0; // 左组下标的初始位置
             while (L<N){ // 左组下标初始位置小于 数组长度的时候
                 int M = L+mergeSize-1; // 左组下标的最后位置
-                if (M>N) break; // 越界啦
+                if (M>=N) break; // 越界啦
                 int R = Math.min(M+mergeSize,N-1); // 右组下标的最后位置
                 merge(arr,L,M,R);
                 L = R+1; // 左组往后挪
@@ -79,7 +79,8 @@ public class Review_SortArr {
 
     public static void main(String[] args) {
 
-        int[] arr = getArr(300,15);
+        int[] arr = getArr(300,5);
+        int[] arr1 = new int[]{5,4,3,2,1};
         System.out.println(Arrays.toString(arr));
         process(arr);
         System.out.println(Arrays.toString(arr));
