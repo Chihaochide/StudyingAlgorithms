@@ -17,6 +17,7 @@ public class Code_HeapInsert {
         int left = index*2+1;
         while (left<heapSize){
             int largest = left+1<heapSize && arr[left+1]>arr[left]?left+1:left;
+            largest = arr[largest]>arr[index]?largest:index;
             if (largest==index){
                 break;
             }
